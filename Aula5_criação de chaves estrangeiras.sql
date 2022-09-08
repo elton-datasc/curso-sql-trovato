@@ -82,5 +82,11 @@ ALTER TABLE Registro_Presenca
 
 -- apagar uma CONSTRAINT:
 
-/* ALTER TABLE tab
-		DROP CONSTRAINT fk_chave;*\
+--ALTER TABLE tab
+		--DROP CONSTRAINT fk_chave;
+
+
+
+
+
+

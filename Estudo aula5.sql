@@ -13,8 +13,13 @@ CONSTRAINT fk_produto FOREIGN KEY (id_produto) REFERENCES Produto_acabado(id_pro
 
 );
 
-/*INSERT INTO Vendas VALUES
-	(3,6.50,2022-07-09);*/ -- NÃO CONSEGUI POPULAR A Vendas
+SELECT * FROM Vendas;
+
+INSERT INTO Vendas
+    (id_produto,quantidade_vendida,valor_unit,data_venda)
+VALUES
+	(2,5,7.20,GETDATE()),
+	(3,9,8.50,GETDATE());
 
 CREATE TABLE Produto_acabado
 (
@@ -27,8 +32,6 @@ CREATE TABLE Produto_acabado
 	data_producao datetime NOT NULL
 
 );
-
-DROP TABLE Vendas;
 
 INSERT INTO Produto_acabado VALUES
 	(101,'calça jeans',10,3.90,2022-07-09),
