@@ -26,3 +26,16 @@ Select T.id_curso AS IDC,T.id_turma AS IDT,T.data_inicio AS "data comeco"
 
 Select T.id_curso IDC,T.id_turma IDT,T.data_inicio "data comeco"
 	FROM dbo.Turmas T;
+
+
+--TESTE
+SELECT A.id_aluno IDA, A.nome NOME_ALUNO 
+	FROM dbo.Alunos A;
+
+
+Select * from Alunos;
+
+
+INSERT TABLE Alunos(
+
+
