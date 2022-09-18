@@ -27,12 +27,12 @@ SELECT * FROM VENDAS;
 
 
 SELECT
-	v.cliente,
-	SUM(v.valor_final) AS venda_por_cliente
+	cliente,
+	SUM(valor_final) AS venda_por_cliente
 FROM 
-	VENDAS v
+	VENDAS
 GROUP BY 
-	v.cliente 
+	cliente 
 ORDER BY
 	venda_por_cliente DESC
 	
